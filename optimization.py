@@ -12,4 +12,4 @@ def xgb_optimize(model, X, y, params=None):
         }
     xgb_grid_search = GridSearchCV(model, params, scoring="neg_mean_squared_error", cv=5, n_jobs=-1)
     xgb_grid_search.fit(X, y)
-    return xgb_grid_search
+    return xgb_grid_search.best_estimator_

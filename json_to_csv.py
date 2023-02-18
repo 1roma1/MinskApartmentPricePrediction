@@ -50,7 +50,7 @@ apartment_dict = {
 }
 
 
-data_path = "data/2022_12_23/"
+data_path = "data/2023_02_18/"
 json_files = os.listdir(data_path)
 
 for json_file_name in tqdm(json_files):
@@ -112,4 +112,4 @@ for json_file_name in tqdm(json_files):
             apartment_dict["is_new_build"].append(apartment_desc["isNewBuild"])
 
 df = pd.DataFrame(apartment_dict)
-df.to_csv("data/2022_12_23/apartment_data.csv", index=False)
+df.to_csv("data/2023_02_18/apartment_data.csv", index=False)

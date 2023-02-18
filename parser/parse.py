@@ -97,7 +97,7 @@ if __name__ == "__main__":
             if i+1000 < len(links): 
                 print(f"{i+1000} links are parsed")
             else:
-                print(f"{len(links)} are parsed")
+                print(f"{len(links)} links are parsed")
 
             file_name = f"{i}_{i+1000}.json" if i+1000 < len(links) else f"{i}_{len(links)}.json"
             with open(os.path.join(dir_name, file_name), "w", encoding="utf-8") as f:
